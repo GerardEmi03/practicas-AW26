@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+
+  <header class="encabezado-sitio">
+    <span class="material-symbols-outlined">link</span>
+    <h1>Gestión de Relaciones</h1>
+  </header>
+
+  <section class="contenedor-estructura">
+    
+    <main class="contenido-principal">
+      <h2>Relaciones</h2>
+
+      <form class="formulario-estandar" onsubmit="guardarRelaciones(event)">
+        
+        <fieldset class="bloque-relacion">
+          <legend>Auto - Corredor</legend>
+          
+          <section class="grupo-campo">
+            <select id="auto" name="auto" required>
+              <option value="">-- Seleccionar --</option>
+              <option value="Auto 1">Auto 1</option>
+            </select>
+            <label for="auto">Auto</label>
+          </section>
+
+          <section class="grupo-campo">
+            <select id="corredor" name="corredor" required>
+              <option value="">-- Seleccionar --</option>
+              <option value="Corredor 1">Corredor 1</option>
+            </select>
+            <label for="corredor">Corredor</label>
+          </section>
+        </fieldset>
+
+        <fieldset class="bloque-relacion">
+          <legend>Piloto 1 - Piloto 2</legend>
+          
+          <section class="grupo-campo">
+            <select id="piloto1" name="piloto1" required>
+              <option value="">-- Seleccionar --</option>
+              <option value="Piloto A">Piloto A</option>
+            </select>
+            <label for="piloto1">Piloto 1</label>
+          </section>
+
+          <section class="grupo-campo">
+            <select id="piloto2" name="piloto2" required>
+              <option value="">-- Seleccionar --</option>
+              <option value="Piloto B">Piloto B</option>
+            </select>
+            <label for="piloto2">Piloto 2</label>
+          </section>
+        </fieldset>
+
+        <footer class="contenedor-boton">
+          <button type="submit">
+            <span class="material-symbols-outlined">save</span> Guardar
+          </button>
+        </footer>
+
+      </form>
+    </main>
+
+    <aside class="menu-lateral">
+      <nav>
+        <h3><span class="material-symbols-outlined">menu</span> Menú</h3>
+        <ol>
+          <li><a href="index.html">Menú principal</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="escuderia.html">Escuderia</a></li>
+          <li><a href="corredor.html">Corredor</a></li>
+          <li><a href="relaciones.html">Relaciones</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+  </section>
+
+  <footer class="pie-pagina">
+    <p>Gerardo Emiliano Cervantes Noriega</p>
+    <p>Grupo LDSM405</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
