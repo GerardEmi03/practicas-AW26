@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
+
+    <title>Mi Portafolio Bootstrap</title>
+</head>
+<body class="text-center">
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom border-danger">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand me-3" href="#arriba">
+                    <img src="img/icono.jpeg" width="100" height="100" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trabajos">Enfoque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos-destacados">Proyectos Destacados</a>
+                        </li>
+                        <li class="nav-item my-1 my-sm-0 me-sm-2">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</button>
+                        </li>
+                        <li class="nav-item my-1 my-sm-0 me-sm-2">
+                            <button type="button" class="btn btn-outline-primary text-white" data-bs-toggle="modal" data-bs-target="#modalCV">CV</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid text-center" id="arriba">
+
+        <section id="inicio" class="container-fluid text-center" style="margin-top: 150px">
+            <article id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/fondo 1.png" alt="Imagen 1" class="d-block w-100 mx-auto" style="height: 400px; object-fit: cover; filter: blur(3px);">
+                        <a href="#sobre-mi" class="carousel-caption bg-dark p-2 rounded mx-auto text-center text-decoration-none text-white d-block" style="max-width: 80%;">
+                            <h3 class="text-center">Sobre mí</h3>
+                            <p class="text-center m-0">¿Quien soy?.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/fondo 2.jpeg" alt="Imagen 2" class="d-block w-100 mx-auto" style="height: 400px; object-fit: cover; filter: blur(3px);">
+                        <a href="#trabajos" class="carousel-caption bg-dark p-2 rounded mx-auto text-center text-decoration-none text-white d-block" style="max-width: 80%;">
+                            <h3 class="text-center">Enfoques</h3>
+                            <p class="text-center m-0">A que me dedico más.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/fondo 3.jpeg" alt="Imagen 3" class="d-block w-100 mx-auto" style="height: 400px; object-fit: cover; filter: blur(3px);">
+                        <a href="#proyectos-destacados" class="carousel-caption bg-dark p-2 rounded mx-auto text-center text-decoration-none text-white d-block" style="max-width: 80%;">
+                            <h3 class="text-center">Proyectos</h3>
+                            <p class="text-center m-0">Mi trayectoria profesional.</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </article>
+        </section>  
+
+        <section id="sobre-mi" class="container-fluid mt-4 text-center">
+            <h1 class="text-center">Sobre mí</h1>
+            <div class="text-center my-3">
+                <img src="img/yo.jpeg" class="img-thumbnail mx-auto d-block" width="220" alt="Foto de perfil">
+            </div>
+            <h3 class="text-center my-3 mx-auto" style="max-width: 900px;">Soy un estudiante de la carrera de Desarrollo de software de la Universidad Tecnológica de León enfocado en el desarrollo Frontend y Backend, que además ama los videojuegos y las tecnologías emergentes</h3>
+
+            <div class="row mt-4 justify-content-center">
+                <div class="col-sm-4 p-2">
+                    <article class="bg-white text-dark p-3 rounded border border-primary text-center">
+                        <h2 class="text-center">No.1</h2>
+                        <h4 class="text-center">Moviles</h4>
+                        <p class="text-center">Pasion por la creacion de apps con tecnologías.</p>
+                    </article>
+                </div>
+                <div class="col-sm-4 p-2">
+                    <article class="bg-white text-dark p-3 rounded border border-danger text-center">
+                        <h2 class="text-center">No.2</h2>
+                        <h4 class="text-center">Programador</h4>
+                        <p class="text-center">Especial desempeño en la creacion de programas hechos en C++, C, Phyton y Java.</p>
+                    </article>
+                </div>
+                <div class="col-sm-4 p-2">
+                    <article class="bg-white text-dark p-3 rounded border border-warning text-center">
+                        <h2 class="text-center">No.3</h2>
+                        <h4 class="text-center">Diseñador</h4>
+                        <p class="text-center">Dedicacion a el desarrollo frontent con HTML, CSS y Bootstrap.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabajos" class="container-fluid row mt-4 justify-content-center mx-auto text-center">
+            <h1 class="text-center w-100">Mis enfoques</h1>
+            <article class="card border border-primary m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/frontent.jpeg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Programación en moviles</h4>
+                    <p class="card-text text-center">Desarrollo de aplicaciones moviles en android</p>
+                    <button class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver detalles</button>
+                </div>
+            </article>
+            <article class="card border border-success m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/backend.jpeg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Programacion en diseño</h4>
+                    <p class="card-text text-center">Desarrolo de diseños creativos en apps y webs</p>
+                    <button class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver detalles</button>
+                </div>
+            </article>
+            <article class="card border border-warning m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/diseñador.jpeg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Videojuegos</h4>
+                    <p class="card-text text-center">Pasatiempo que me gusta mucho</p>
+                    <button class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver detalles</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="proyectos-destacados" class="container-fluid row mt-4 justify-content-center mx-auto text-center">
+            <h1 class="text-center w-100">Proyectos Destacados</h1>
+            <article class="card border border-primary m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/proyecto1.png" alt="Proyecto 1">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Proyecto prototipo</h4>
+                    <p class="card-text text-center">Prototipo de una app de ayuda industrial.</p>
+                    <button class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Ver más</button>
+                </div>
+            </article>
+            <article class="card border border-danger m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/p2.jpeg" alt="Proyecto 2">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Proyecto futuro</h4>
+                    <p class="card-text text-center">Proyecto enfocado en la creacion de recetas.</p>
+                    <button class="btn btn-danger mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalProyecto2">Ver más</button>
+                </div>
+            </article>
+            <article class="card border border-warning m-2 text-center" style="width:360px">
+                <img class="card-img-top mx-auto" src="img/p3.jpeg" alt="Proyecto 3">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-center">Redes sociales</h4>
+                    <p class="card-text text-center">instagram personal.</p>
+                    <button class="btn btn-warning mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalProyecto3">Ver más</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="container-fluid bg-primary text-center border-top border-warning mt-4 py-2"> 
+        Gerardo Cervantes 
+        <br>
+        <a href="#arriba" class="text-white"><span class="material-symbols-outlined">arrow_upward</span></a>
+    </footer>
+
+    <div class="modal fade" id="modalCV">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Mi Curriculum Vitae</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h2 class="text-center">Gerardo Cervantes</h2>
+                    <p class="text-center">Estudiante de Desarrollo de Software / UTL</p>
+                    <hr>
+                    <h4 class="text-center">Experiencia y Formación</h4>
+                    <p class="text-center">Experiencia en varios lenguajes de programación como C++, C, Java, Kotlin, Phyton y bases de datos, Estudie en la preparatoria tecnologíca CBTIS225 y actualmente estudainte universitario en la UTL.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalContacto">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Contacto</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <form class="text-center">
+                        <div class="mb-3 text-center">
+                            <label class="form-label text-center">Tu Correo:</label>
+                            <input type="email" class="form-control text-center" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label class="form-label text-center">Mensaje:</label>
+                            <textarea class="form-control text-center" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary mx-auto d-block">Enviar</button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyecto1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Sistema Web Interactivo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/proyecto1.png" class="img-fluid mb-3 mx-auto d-block" alt="Imagen Proyecto 1">
+                    <h5 class="text-center">Descripción Detallada</h5>
+                    <p class="text-center">Este proyecto consiste en una aplicación de prototipo sobre una app que ayuda a encontrar zonas de dificil acceso.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyecto2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Aplicación Móvil Responsiva</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/p2.jpeg" class="img-fluid mb-3 mx-auto d-block" alt="Imagen Proyecto 2">
+                    <h5 class="text-center">Descripción Detallada</h5>
+                    <p class="text-center">Futuro proyecto enfocado en una app de recetas de comida.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyecto3">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Plataforma Web / Multimedia</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/p3.jpeg" class="img-fluid mb-3 mx-auto d-block" alt="Imagen Proyecto 3">
+                    <h5 class="text-center">Descripción Detallada</h5>
+                    <p class="text-center">Mi instagram personal donde subo mis cositas.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalInfo">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title w-100 text-center">Detalles del Trabajo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-center">Me gusta mucho crear nuevas apps, la tecnología, el diseño y los videojuegos.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
